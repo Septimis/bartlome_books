@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bartlome Books</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/books.css">
+  <link rel="stylesheet" href="css/upcoming.css">
+  <link rel="stylesheet" href="css/author.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo" onclick="on_navigation_clicked('home')">
+        <img id="logo-img" src="assets/img/logo.png" />
+        <div>Bartlome Books</div>
+    </div>
+    <nav class="nav" id="nav-menu">
+      <a href="#home" id="home-link" class="nav-link active" onclick="on_navigation_clicked('home')">Home</a>
+      <a href="#books" id="books-link" class="nav-link" onclick="on_navigation_clicked('books')">Books</a>
+      <a href="#upcoming" id="upcoming-link" class="nav-link" onclick="on_navigation_clicked('upcoming')">Upcoming</a>
+      <a href="#author" id="author-link" class="nav-link" onclick="on_navigation_clicked('author')">Author</a>
+      <a href="#contact" id="contact-link" class="nav-link" onclick="on_navigation_clicked('contact')">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Content Container -->
+  <main id="content">
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <h1>Bartlome Books</h1>
+        <p>Spark your child's imagination with our enchanting collection of books!</p>
+      </div>
+
+      <section class="mini-services row">
+          <div id="books-card" class="card" onclick="on_navigation_clicked('books')">
+            <h3>Books</h3>
+            <p>Take a moment to browse our magical book collection</p>
+          </div>
+          <div id="upcoming-card" class="card" onclick="on_navigation_clicked('upcoming')">
+            <h3>Upcoming</h3>
+            <p>There's always something to look forward to with Bartlome Books</p>
+          </div>
+          <div id="author-card" class="card" onclick="on_navigation_clicked('author')">
+            <h3>Author</h3>
+            <p>Read more about our Author</p>
+          </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="home-section overview">
+        <div>
+          <h3>What We Are</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius, 
+            lorem a viverra aliquet, turpis sapien vulputate nulla, in dignissim 
+            eros justo vitae nisl.
+          </p>
+        </div>
+        <div>
+          <h3>Who It’s For</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+            Vivamus vehicula sapien ac nunc dignissim, a posuere mauris commodo.
+          </p>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="home-section testimonials">
+        <h2>What Our Patients Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            <span>- Jane D.</span>
+          </div>
+          <div class="testimonial">
+            <p>"Aliquam eget sapien a urna luctus aliquam a nec sapien."</p>
+            <span>- Mark R.</span>
+          </div>
+          <div class="testimonial">
+            <p>"Curabitur vel libero nec urna varius dapibus ut in velit."</p>
+            <span>- Sarah L.</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Books Page -->
+    <section id="books" class="page">
+      <h2>Our Services</h2>
+
+      <!-- Service Row 1 -->
+      <div class="service-row">
+        <img src="assets/icons/stethoscope.svg" alt="Checkups" />
+        <div class="service-text">
+          <h3>Checkups</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, sem vel
+            luctus tincidunt, risus elit malesuada libero, vel finibus sapien turpis ac augue.
+            Aliquam erat volutpat. Suspendisse suscipit, erat ut placerat convallis, tortor mi
+            cursus eros, nec laoreet augue libero id lorem.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Row 2 -->
+      <div class="service-row reverse">
+        <img src="assets/icons/heart.svg" alt="Preventive Care" />
+        <div class="service-text">
+          <h3>Preventive Care</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at cursus lacus,
+            ut condimentum justo. Duis maximus justo id felis tristique feugiat. Nam in rhoncus
+            mauris. Curabitur faucibus enim ut urna commodo, in egestas ipsum faucibus.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Row 3 -->
+      <div class="service-row">
+        <img src="assets/icons/chat.svg" alt="Consultations" />
+        <div class="service-text">
+          <h3>Consultations</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus lectus magna,
+            ac feugiat tortor mattis ut. Fusce egestas ligula non sapien blandit convallis.
+            Suspendisse vel suscipit justo. Phasellus tristique lorem ut felis gravida sodales.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Row 4 -->
+      <div class="service-row reverse">
+        <img src="assets/icons/meds.svg" alt="Prescriptions" />
+        <div class="service-text">
+          <h3>Prescriptions</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor metus id
+            justo aliquet, non faucibus turpis ullamcorper. Curabitur mattis orci ac diam
+            tincidunt, ac gravida enim sagittis. Vestibulum ante ipsum primis in faucibus orci
+            luctus et ultrices posuere cubilia curae.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Page -->
+    <section id="upcoming" class="page">
+      <h2>Transparent Pricing</h2>
+      <p>No insurance, no hidden fees. Just simple monthly plans.</p>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Individual</h3>
+          <p class="price">$75/month</p>
+          <p>Unlimited visits, prescriptions at-cost</p>
+        </div>
+        <div class="plan">
+          <h3>Family</h3>
+          <p class="price">$200/month</p>
+          <p>Coverage for the whole family</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Author Page -->
+    <section id="author" class="page">
+      <h2>About Us</h2>
+      <p>
+        We’re a small clinic with a big mission: to bring back personal, transparent, and stress-free healthcare. 
+        Direct Primary Care means you get access to your doctor like never before — no insurance, no corporate barriers.
+      </p>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+      <h2>Get In Touch</h2>
+      <p>Email: abigailbartlome13@gmail.com</p>
+      <p>Phone: (801) 815-7937</p>
+    </section>
+
+    <!-- Error Page -->
+    <section id="error" class="page">
+        <h1>Not all who wander are lost... But you are!</h1>
+        <button onclick="on_navigation_clicked('home')">Wander Home</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Bartlome Books</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

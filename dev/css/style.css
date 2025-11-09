@@ -123,6 +123,10 @@ main {
     font-weight: bold;
 }
 
+.coming-soon-tag {
+    font-weight: bold;
+}
+
 .buttons {
     display: flex;
     gap: 10px;

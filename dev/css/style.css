@@ -169,6 +169,11 @@ main {
     text-transform: uppercase;
 }
 
+.facebook-event-logo  {
+    height: auto;
+    width: 35px !important;
+}
+
 footer {
     background-color: #6a4c93; /* Dark purple */
     color: #f9e4bc;

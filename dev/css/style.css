@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #f9e4bc; /* Beige */
+    background-color: #61bbc1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +91,7 @@ main {
     gap: 20px;
     background-color: #a799b7;
     width: 100vw;
+    box-sizing: border-box;
     padding: 64px;
 }
 
@@ -98,7 +99,7 @@ main {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 350px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
